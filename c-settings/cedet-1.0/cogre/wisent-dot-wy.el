@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2003, 2004, 2009 Eric M. Ludlam
 
-;; Author: crackcell <crackcell@crackcells-macbookair.local>
-;; Created: 2011-12-16 16:59:21+0800
+;; Author: crackcell <crackcell@crackcell-macbookair.local>
+;; Created: 2012-03-31 15:34:15+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

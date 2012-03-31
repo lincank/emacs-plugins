@@ -2,8 +2,8 @@
 
 ;;; Copyright (C) 2007 Daniel Debertin (debertin@gmail.com)
 
-;; Author: crackcell <crackcell@crackcells-macbookair.local>
-;; Created: 2011-12-16 16:59:28+0800
+;; Author: crackcell <crackcell@crackcell-macbookair.local>
+;; Created: 2012-03-31 15:34:20+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

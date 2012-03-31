@@ -134,8 +134,8 @@ Works on grep, compile, or other type mode.
 
 ;;;### (autoloads nil nil ("eieio-base.el" "eieio-comp.el" "eieio-custom.el"
 ;;;;;;  "eieio-doc.el" "eieio-load.el" "eieio-speedbar.el" "eieio-test-methodinvoke.el"
-;;;;;;  "eieio-test-mro.el" "eieio-tests.el" "eieio.el") (20203 2108
-;;;;;;  245493))
+;;;;;;  "eieio-test-mro.el" "eieio-tests.el" "eieio.el") (20342 45903
+;;;;;;  395566))
 
 ;;;***
 

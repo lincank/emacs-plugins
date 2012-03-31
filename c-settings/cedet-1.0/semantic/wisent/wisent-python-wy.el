@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004, 2007 Richard Kim
 
-;; Author: crackcell <crackcell@crackcells-macbookair.local>
-;; Created: 2011-12-16 16:59:01+0800
+;; Author: crackcell <crackcell@crackcell-macbookair.local>
+;; Created: 2012-03-31 15:34:00+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003, 2004 David Ponce
 
-;; Author: crackcell <crackcell@crackcells-macbookair.local>
-;; Created: 2011-12-16 16:58:46+0800
+;; Author: crackcell <crackcell@crackcell-macbookair.local>
+;; Created: 2012-03-31 15:33:46+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
