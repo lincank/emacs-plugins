@@ -1,0 +1,5 @@
+#name: class.static_functions
+# --
+/* static functions: */
+public:
+    $1

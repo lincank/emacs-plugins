@@ -1,0 +1,11 @@
+#name : sub ... { ... }
+# --
+##! @todo: ${1:desp_for_this_func}
+##! @param: 0 => ${2:arg1}
+##! @param: 1 => ${3:arg2}
+##! @return:
+##!   0 => ${4:success}
+##!   1 => ${5:failure}
+sub ${6:function_name} {
+    $0
+}

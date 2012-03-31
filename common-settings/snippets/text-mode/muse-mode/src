@@ -1,0 +1,7 @@
+#name : <src>
+#contributor : crackcell <tanmenglong@gmail.com>
+# --
+<src type="${1:c}">
+$2
+</src>
+$3

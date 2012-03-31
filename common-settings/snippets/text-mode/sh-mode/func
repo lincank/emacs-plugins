@@ -1,0 +1,13 @@
+#name : func
+# --
+##! @TODO: ${1:desp_for_this_func}
+##! @AUTHOR: tanmenglong <tanmenglong@baidu.com>
+##! @VERSION: ${2:1.0}
+##! @IN: 1 => ${3:arg1}
+##! @IN: 2 => ${4:arg2}
+##! @OUT: 0 => ${5:success} 1 => ${6:failure}
+function $7()
+{
+    $8
+}
+

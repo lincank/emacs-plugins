@@ -1,0 +1,3 @@
+#name : bind()
+# --
+bind(${1:listen_sock}, (struct sockaddr*)&${2:serv_addr}, sizeof(${3:sockaddr_in)));$0

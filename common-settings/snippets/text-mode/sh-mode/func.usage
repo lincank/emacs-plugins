@@ -1,0 +1,42 @@
+#name : func.usage
+# --
+##! @TODO: show usage
+##! @AUTHOR: tanmenglong <tanmenglong@baidu.com>
+##! @VERSION: 1.0
+usage() {
+	cat <<EOF
+Usage: $0 [OPTIONS]
+
+Installer for Scratchbox $__scratchbox_version '$__scratchbox_release' release.
+Scratchbox is a cross-compilation toolkit for Linux. This script installs
+version which is suited for maemo $__maemo_version '$__maemo_release' release development.
+This script cannot be used to update an existing installation.
+
+ * Checks for compatibility of your Linux environment.
+ * Downloads scratchbox packages from scratchbox.org
+ * Installs Scratchbox to your computer
+
+On Debian-based distributions, the toolkit will be installed per default
+from Debian .deb packages. Packages install to default path /scratchbox .
+
+On any other Linux distribution: the install will use .tar.gz files
+which can be installed to any given path which ends in /scratchbox
+e.g. to /scratchbox or /opt/scratchbox .
+
+
+Options:
+	-v	Display version and exit.
+	-h	Show this usage guide.
+	-c	Use existing downloads, don't try to download again.
+	-a	Use APT for installation of the packages.
+		(default on Debian based systems)
+	-d	Install from Debian packages using wget and dpkg.
+	-F	Use dpkg --force-architecture for 64-bit Linux (not supported)
+	-U	Attempt an upgrade on a system that already has scratchbox.
+	-s PATH	Install from .tar.gz to path (to e.g. $__default_scratchbox).
+	-g NAME	Specify Scratchbox user group (default $__default_group)
+	-u USER	Specify users to add to Scratchbox (separated by commas).
+
+EOF
+}
+

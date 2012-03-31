@@ -1,0 +1,85 @@
+;; Yanippet
+(add-to-list 'load-path "~/.emacs.d/emacs-plugins/yasnippet")
+(require 'yasnippet) ;; not yasnippet-bundle
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/emacs-plugins/yasnippet/snippets")
+
+(setq indent-tabs-mode nil)
+(setq default-tab-width 4)
+(setq tab-width 4)
+(setq tab-stop-list ())
+;(loop for x downfrom 40 to 1 do
+;      (setq tab-stop-list (cons (* x 4) tab-stop-list)))
+
+;; M-SPC not available, window manager take it away
+(global-set-key (kbd "M-'") 'just-one-space)
+(global-set-key (kbd "C-M-=") 'pde-indent-dwim)
+;; nearest key to dabbrev-expand
+(global-set-key (kbd "M-;") 'hippie-expand)
+(global-set-key (kbd "C-;") 'comment-dwim)
+(global-set-key (kbd "C-c f") 'comint-dynamic-complete)
+
+(setq hippie-expand-try-functions-list
+          '(try-expand-line
+            try-expand-dabbrev
+            try-expand-line-all-buffers
+            try-expand-list
+            try-expand-list-all-buffers
+            try-expand-dabbrev-visible
+            try-expand-dabbrev-all-buffers
+            try-expand-dabbrev-from-kill
+            try-complete-file-name
+            try-complete-file-name-partially
+            try-complete-lisp-symbol
+            try-complete-lisp-symbol-partially
+            try-expand-whole-kill))
+(autoload 'comint-dynamic-complete "comint" "Complete for file name" t)
+(setq comint-completion-addsuffix '("/" . ""))
+(setq-default indent-tabs-mode nil)
+
+(defalias 'perl-mode 'cperl-mode)
+(defun pde-perl-mode-hook ()
+  (abbrev-mode t)
+  (add-to-list 'cperl-style-alist
+               '("PDE"
+                 (cperl-auto-newline                         . t)
+                 (cperl-brace-offset                         . 0)
+                 (cperl-close-paren-offset                   . -4)
+                 (cperl-continued-brace-offset               . 0)
+                 (cperl-continued-statement-offset           . 4)
+                 (cperl-extra-newline-before-brace           . nil)
+                 (cperl-extra-newline-before-brace-multiline . nil)
+                 (cperl-indent-level                         . 4)
+                 (cperl-indent-parens-as-block               . nil)
+                 (cperl-label-offset                         . -4)
+                 (cperl-merge-trailing-else                  . t)
+                 (cperl-tab-always-indent                    . nil)))
+  (cperl-set-style "PDE"))
+
+(add-hook 'cperl-mode 'pde-perl-mode-hook)
+
+;;; ESS
+;(add-hook 'ess-mode-hook
+;		  (lambda ()
+;			(ess-set-style 'C++ 'quiet)
+;			;; Because
+;			;;                                 DEF GNU BSD K&R C++
+;			;; ess-indent-level                  2   2   8   5   4
+;			;; ess-continued-statement-offset    2   2   8   5   4
+;			;; ess-brace-offset                  0   0  -8  -5  -4
+;			;; ess-arg-function-offset           2   4   0   0   0
+;			;; ess-expression-offset             4   2   8   5   4
+;			;; ess-else-offset                   0   0   0   0   0
+;			;; ess-close-brace-offset            0   0   0   0   0
+;			(add-hook 'local-write-file-hooks
+;					  (lambda ()
+;						(ess-nuke-trailing-whitespace)))))
+;(setq ess-nuke-trailing-whitespace-p 'ask)
+;; or even
+;; (setq ess-nuke-trailing-whitespace-p t)
+;
+;; Perl
+;(add-hook 'perl-mode-hook
+;		  (lambda () (setq perl-indent-level 4)))
+
+(setq perl-indent-level 4)

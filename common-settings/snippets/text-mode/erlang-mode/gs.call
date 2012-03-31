@@ -1,0 +1,4 @@
+#name : gen_server:call_local
+# --
+gen_server:call(?SERVER, {${1:Request}}).
+$2

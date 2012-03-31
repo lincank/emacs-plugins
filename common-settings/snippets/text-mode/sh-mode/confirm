@@ -1,0 +1,12 @@
+#name : func.confirm
+# --
+##! @TODO: yes or no
+##! @AUTHOR: tanmenglong <tanmenglong@baidu.com>
+##! @VERSION: 1.0
+confirm() {
+    echo -n "continue [Y/n]?";
+    read answer;
+    if [ "$answer" == "N" ] || [ "$answer" == 'n' ]; then
+    exit -1;
+    fi
+}

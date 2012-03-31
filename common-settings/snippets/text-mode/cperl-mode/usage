@@ -1,0 +1,7 @@
+#name : sub usage
+# --
+##! @TODO: 显示使用方法
+sub usage
+{
+    print "`(file-name-nondirectory (buffer-file-name))`\n";
+}

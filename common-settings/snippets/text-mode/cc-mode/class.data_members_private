@@ -1,0 +1,5 @@
+#name: class.data_members_private
+# --
+/* data members: */
+private:
+    $1

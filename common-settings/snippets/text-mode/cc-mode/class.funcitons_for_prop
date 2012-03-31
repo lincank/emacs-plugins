@@ -1,0 +1,5 @@
+#name: class.functions_for_prop
+# --
+/* functions for main properties: */
+public:
+    $1

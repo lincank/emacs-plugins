@@ -1,0 +1,4 @@
+#name : -module(filename).
+# --
+-module($1).
+$2

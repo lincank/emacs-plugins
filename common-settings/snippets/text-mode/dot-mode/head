@@ -1,0 +1,6 @@
+#name : digraph {}
+# --
+digraph "$1" {
+	"node0" -> "node1" [];
+}
+

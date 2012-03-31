@@ -1,0 +1,5 @@
+#name: class.typedefs
+# --
+/* typedefs: */
+public:
+    $1

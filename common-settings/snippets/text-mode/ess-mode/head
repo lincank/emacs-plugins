@@ -1,0 +1,17 @@
+# name : head
+# contributor : Menglong Tan <tanmenglong@gmail.com>
+# --
+#'
+#' Copyright (c) `(format-time-string "%Y")`, crackcell <tanmenglong@gmail.com>
+#'
+#' This program is free software; you can redistribute it
+#' and/or modify it under the terms of the GPL licence
+#'
+#'
+#' @file `(file-name-nondirectory (buffer-file-name))`
+#' @author crackcell <tanmenglong@gmail.com>
+#' @date `(current-time-string)`
+#' @brief $1
+#'
+
+$2

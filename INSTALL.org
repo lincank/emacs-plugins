@@ -1,0 +1,24 @@
+* 安装emacs-plugins
+  1. 将文件放置到~/.emacs.d/emacs-plugins/下
+  2. cp ~/.emacs.d/emacs-plugins/emacs ~/.emacs
+  3. 在~/.bashrc下加入：
+#+BEGIN_SRC bash
+	 # for emacs
+	 alias emacs='emacs -nw'
+	 alias e='emacs -nw'
+	 alias ec="emacs -l ~/.emacs.d/emacs-plugins/init/c.el"
+	 alias ep="emacs -l ~/.emacs.d/emacs-plugins/init/perl.el"
+	 alias es="emacs -l ~/.emacs.d/emacs-plugins/init/sh.el"
+	 alias eo="emacs -l ~/.emacs.d/emacs-plugins/init/org.el"
+	 alias em="emacs -l ~/.emacs.d/emacs-plugins/init/muse.el"
+#+END_SRC
+  4. 在命令行里面打开一个cpp文件
+	 ec xx.cpp
+* 快捷键
+  - F1 - 绑定到org-mode下auto-complet的补全
+  - F2 - 绑定replace-string，文本替换
+  - F5 - muse-mode下的发布当前文件
+  - F7 - tabbar移动到前一个tab
+  - F8 - tabbar移动到后一个tab
+  - F12 - org-mode下显示agenda
+

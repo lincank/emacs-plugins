@@ -1,0 +1,3 @@
+#name : accept()
+# --
+accept(${1:listen_sock}, (struct sockaddr*)${2:&client_addr}, ${3:&addr_len});$0

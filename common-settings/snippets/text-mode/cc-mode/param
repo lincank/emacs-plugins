@@ -1,0 +1,3 @@
+#name : param
+# --
+@param [${1:in}] ${2:param_name} : ${3:param_type} ${4:param_description}

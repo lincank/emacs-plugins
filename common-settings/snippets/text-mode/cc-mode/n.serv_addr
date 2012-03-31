@@ -1,0 +1,5 @@
+#name : fill serv_addr
+# --
+${1:serv_addr}.sin_family = ${2:AF_INET};
+$1.sin_addr.s_addr = htonl(${3:htonl(INADDR_ANY)});
+$1.sin_port = htons(${4:port});$0

@@ -1,0 +1,15 @@
+#name : func_baidu
+# --
+/**
+ * @brief $6
+ *
+ * @param [in] param_name : param_type param_description
+ * @return
+ * @retval 0: sucess 1: failure
+ * @author tanmenglong
+ * @date `(current-time-string)`
+ */
+${1:void} ${2:func_name}($3) {
+    $5
+    return ${4:RET_RIGHT};
+}

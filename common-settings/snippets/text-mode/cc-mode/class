@@ -1,0 +1,9 @@
+#name: class { ... }
+# --
+/**
+ * @brief ${1:description}
+ */
+class ${2:ClassName} {
+$2();
+~$2();
+};

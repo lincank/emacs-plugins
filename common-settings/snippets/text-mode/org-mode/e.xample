@@ -1,0 +1,6 @@
+#name : Example Block
+#contributor : crackcell
+# --
+#+BEGIN_EXAMPLE
+$0
+#+END_EXAMPLE

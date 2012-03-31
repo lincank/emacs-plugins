@@ -1,0 +1,6 @@
+#name : head
+# --
+\documentclass[a4paper,12pt]{article}
+\begin{${1:document}}
+$0
+\end{$1}

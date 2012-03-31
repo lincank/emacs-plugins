@@ -1,0 +1,3 @@
+#name : socket()
+# --
+socket(${1:AF_INET}, ${2:SOCK_STREAM}, 0);$0

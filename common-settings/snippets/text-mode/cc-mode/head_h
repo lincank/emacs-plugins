@@ -1,0 +1,31 @@
+#name : head_h
+# --
+// -*- encoding: utf-8; indent-tabs-mode: nil -*-
+
+/***************************************************************
+ *
+ * Copyright (c) `(format-time-string "%Y")`, crackcell <tanmenglong@gmail.com>
+ *
+ * This program is free software; you can redistribute it
+ * and/or modify it under the terms of the GPL licence
+ *
+ **************************************************************/
+
+#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#define $1
+
+${2:#include <stdio.h>}
+
+/**
+ * @file `(file-name-nondirectory (buffer-file-name))`
+ * @author TanMenglong <tanmenglong@gmail.com>
+ * @date `(current-time-string)`
+ * @brief $3
+ *
+ **/
+
+$4
+
+#endif /* $1 */
+
+/* vim: set expandtab shiftwidth=4 tabstop=4: */

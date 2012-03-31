@@ -1,0 +1,19 @@
+#name : head.ziqiang
+# --
+#!/usr/bin/perl
+##! @description: ${1:usage}
+##! @version: ${2:1}
+##! @author: crackcell <tanmenglong@gmail.com>
+##! @date:   `(current-time-string)`
+
+use strict;
+
+#--------------- global variable --------------
+
+
+#------------------ function ------------------
+
+
+#------------------- main -------------------
+
+$11

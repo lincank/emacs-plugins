@@ -1,0 +1,4 @@
+#name : error_logger:info_report
+#contributor : crackcell <tanmenglong@gmail.com>
+# --
+error_logger:info_report([${1:{tag1,data1},aterm}])$2

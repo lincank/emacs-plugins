@@ -1,0 +1,10 @@
+#name : head
+# --
+#!/usr/bin/env python
+# -*- encoding: utf-8; indent-tabs-mode: nil -*-
+#
+# Copyright `(format-time-string "%Y")` crackcell
+#
+
+if __name__ == "__main__":
+   pass

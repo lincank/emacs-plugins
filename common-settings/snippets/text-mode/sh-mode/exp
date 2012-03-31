@@ -1,0 +1,4 @@
+#name : export
+# --
+export ${1:VARIABLE}=${2:VALUE}
+$3

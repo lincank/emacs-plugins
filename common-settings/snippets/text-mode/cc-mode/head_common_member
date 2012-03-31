@@ -1,0 +1,6 @@
+#name : head_common_member
+# --
+/**
+ * @brief $1
+ */
+$2

@@ -1,0 +1,33 @@
+#name : head
+#contributor : crackcell <tanmenglong@gmail.com>
+# --
+%%%-*- encoding: utf-8; indent-tabs-mode: nil -*-
+%%%-------------------------------------------------------------------
+%%% @author crackcell <tanmenglong@gmail.com>
+%%% @copyright (c) `(format-time-string "%Y")`, crackcell
+%%% @doc
+%%% ${1:file desc}
+%%% @end
+%%% Created : `(current-time-string)`
+%%%-------------------------------------------------------------------
+
+-module(`(file-name-sans-extension (file-name-nondirectory (buffer-file-name)))`).
+-author("crackcell").
+-export([${2:start/0}]).
+
+%%%===================================================================
+%%% API
+%%%===================================================================
+$3
+
+%%%===================================================================
+%%% Internal functions
+%%%===================================================================
+
+
+%%%===================================================================
+%%% Unit tests
+%%%===================================================================
+-ifdef(TEST).
+-include_lib("eunit/include/eunit.hrl").
+-endif.

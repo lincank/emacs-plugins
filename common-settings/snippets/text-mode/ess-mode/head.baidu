@@ -1,0 +1,14 @@
+# name : head.baidu
+# contributor : Menglong Tan <tanmenglong@baidu.com>
+# --
+#'
+#' Copyright (c) `(format-time-string "%Y")` Baidu.com, Inc. All Rights Reserved
+#'
+#'
+#' @file `(file-name-nondirectory (buffer-file-name))`
+#' @author crackcell <tanmenglong@baidu.com>
+#' @date `(current-time-string)`
+#' @brief $1
+#'
+
+$2

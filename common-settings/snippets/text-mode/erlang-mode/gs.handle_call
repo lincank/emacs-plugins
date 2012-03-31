@@ -1,0 +1,7 @@
+#name : gen_server:handle_call
+# --
+%% @private
+handle_call(${1:_Request}, ${2:_From}, State) ->
+    Reply = ok,
+    {reply, Reply, State}${3:;}
+$0

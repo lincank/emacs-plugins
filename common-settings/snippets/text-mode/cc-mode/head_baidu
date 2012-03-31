@@ -1,0 +1,23 @@
+#name : head_baidu
+# --
+// -*- encoding: utf-8; indent-tabs-mode: nil -*-
+
+/***************************************************************
+ *
+ * Copyright (c) `(format-time-string "%Y")` Baidu.com, Inc. All Rights Rserved 
+ *
+ **************************************************************/
+
+${1:#include <stdio.h>}
+
+/**
+ * @file `(file-name-nondirectory (buffer-file-name))`
+ * @author tanmenglong <tanmenglong@baidu.com>
+ * @date `(current-time-string)`
+ * @brief $2
+ *
+ **/
+
+$3
+
+/* vim: set expandtab shiftwidth=4 tabstop=4: */

@@ -1,0 +1,3 @@
+#name : listen()
+# --
+listen(${1:listen_sock}, ${2:backlog});$0

@@ -1,0 +1,15 @@
+#name : func.confirm
+# --
+##! @TODO: ${1:desp_for_this_func}
+##! @AUTHOR: tanmenglong <tanmenglong@baidu.com>
+##! @VERSION: ${2:1.0}
+confirm() {
+    sleep 1
+    return 0
+    echo -n "continue [Y/n]?";
+    read answer;
+    if [ "$answer" == "N" ] || [ "$answer" == 'n' ]; then
+    exit -1;
+    fi
+}
+

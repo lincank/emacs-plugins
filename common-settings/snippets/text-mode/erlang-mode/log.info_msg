@@ -1,0 +1,4 @@
+#name : error_logger:info_msg
+#contributor : crackcell <tanmenglong@gmail.com>
+# --
+error_logger:info_msg("${1:~p~n}", [$2])$3
