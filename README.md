@@ -1,7 +1,7 @@
 # 安装
 ## 自动执行
 
-perl -e "$(curl -fsSL https://bitbucket.org/crackcell/emacs-plugins/raw/a04ff6ad30b3/tools/install.pl)"
+perl -e "$(curl -fsSL https://raw.github.com/crackcell/emacs-plugins/master/tools/install.pl)"
 
 ## 手动执行
   * 将代码checkout到~/.emacs.d/下

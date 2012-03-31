@@ -19,7 +19,7 @@ print("Checking ~/.emacs.d/emacs-plugins...\n");
 `mv ~/.emacs.d/emacs-plugins ~/.emacs.d/emacs-plugins_BAK`;
 
 print("Checkout emacs-plugins...\n");
-`cd ~/.emacs.d;hg clone https://bitbucket.org/crackcell/emacs-plugins`;
+`cd ~/.emacs.d;git clone https://github.com/crackcell/emacs-plugins.git`;
 
 print("Setting up...");
 `mv ~/.emacs ~/.emacs_BAK`;
