@@ -8,11 +8,12 @@
 (setq tab-width 4)
 (setq tab-stop-list ())
 
+(add-to-list 'load-path "~/.emacs.d/emacs-plugins/r-settings")
+
 ;; load ESS
 (load "~/.emacs.d/emacs-plugins/r-settings/load-ess.el")
 
 ;; load coding style
-(add-to-list 'load-path "~/.emacs.d/emacs-plugins/r-settings")
 (load "~/.emacs.d/emacs-plugins/r-settings/crackcell-r-style.el")
 (add-hook 'ess-mode-hook 'crackcell-set-r-style)
 
