@@ -31,4 +31,24 @@
   ;; 补全
   (local-set-key [(tab)] 'org-indent-or-complete))
 
+(setq org-agenda-custom-commands
+	  '(
+		("p" "Projects"   
+		 ((tags "PROJECT")))
+
+		("o" "Office and Home Lists"
+		 ((agenda)
+          (tags-todo "OFFICE")
+          (tags-todo "HOME")
+          (tags-todo "READING")))
+
+		("d" "Daily Action List"
+		 ((agenda "" ((org-agenda-ndays 1)
+                      (org-agenda-sorting-strategy
+                       (quote ((agenda time-up priority-down tag-up) )))
+                      (org-deadline-warning-days 0)
+                      ))))
+		)
+	  )
+
 (add-hook 'org-mode-hook 'org-mode-keys)

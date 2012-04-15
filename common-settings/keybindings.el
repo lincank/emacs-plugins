@@ -3,6 +3,8 @@
 (global-set-key [f2] 'replace-string)
 (global-set-key [f3] 'tabbar-backward)
 (global-set-key [f4] 'tabbar-forward)
+(global-set-key (kbd "C-x <left>") 'tabbar-backward)
+(global-set-key (kbd "C-x <right>") 'tabbar-forward)
 (global-set-key [f6] 'goto-line)
 (global-set-key [f11] 'execute-extended-command)
 
