@@ -17,22 +17,22 @@
 		(hippie-expand nil)
 	  (org-cycle))))
 
-(defun org-mode-keys()
+;(defun org-mode-keys()
   ;; 发布
-  (local-set-key (kbd "C-c l") 'org-store-link)
-  (local-set-key (kbd "C-c a") 'org-agenda)
-  (local-set-key [f5] 'org-export-as-html)
-  (local-set-key [f6]
+  (global-set-key (kbd "C-c l") 'org-store-link)
+  (global-set-key (kbd "C-c a") 'org-agenda)
+  (global-set-key [f5] 'org-export-as-html)
+  (global-set-key [f6]
 				 (lambda() (interactive) (org-write-agenda "~/Desktop/agenda.html")))
 
   ;; 视图
-  (local-set-key [f9] 'org-archive-subtree-default-with-confirmation)
-  (local-set-key [f10] 'org-columns)
-  (local-set-key [f11] 'org-refile)
-  (local-set-key [f12] 'org-agenda)
+  (global-set-key [f9] 'org-archive-subtree-default-with-confirmation)
+  (global-set-key [f10] 'org-columns)
+  (global-set-key [f11] 'org-refile)
+  (global-set-key [f12] 'org-agenda)
 
   ;; 补全
-  (local-set-key [(tab)] 'org-indent-or-complete)
+  (global-set-key [(tab)] 'org-indent-or-complete)
 
   ;; 自定义org命令，在org-agenda里面显示
   (setq org-agenda-custom-commands
@@ -46,6 +46,6 @@
 						 (quote ((agenda time-up priority-down tag-up) )))
 						(org-deadline-warning-days 0)
 						))))))
-)
+;)
 
-(add-hook 'org-mode-hook 'org-mode-keys)
+;(add-hook 'org-mode-hook 'org-mode-keys)
