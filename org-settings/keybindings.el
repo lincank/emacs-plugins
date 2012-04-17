@@ -26,29 +26,26 @@
 				 (lambda() (interactive) (org-write-agenda "~/Desktop/agenda.html")))
 
   ;; 视图
-  (local-set-key [f12] 'org-agenda-list)
+  (local-set-key [f9] 'org-archive-subtree-default-with-confirmation)
+  (local-set-key [f10] 'org-columns)
+  (local-set-key [f11] 'org-refile)
+  (local-set-key [f12] 'org-agenda)
 
   ;; 补全
-  (local-set-key [(tab)] 'org-indent-or-complete))
+  (local-set-key [(tab)] 'org-indent-or-complete)
 
-(setq org-agenda-custom-commands
-	  '(
-		("p" "Projects"   
-		 ((tags "PROJECT")))
-
-		("o" "Office and Home Lists"
-		 ((agenda)
-          (tags-todo "OFFICE")
-          (tags-todo "HOME")
-          (tags-todo "READING")))
-
-		("d" "Daily Action List"
-		 ((agenda "" ((org-agenda-ndays 1)
-                      (org-agenda-sorting-strategy
-                       (quote ((agenda time-up priority-down tag-up) )))
-                      (org-deadline-warning-days 0)
-                      ))))
-		)
-	  )
+  ;; 自定义org命令，在org-agenda里面显示
+  (setq org-agenda-custom-commands
+		'(
+		  ("p" "Projects" ((tags "PROJECT")))
+		  ("o" "Office Lists" ((tags-todo "OFFICE")))
+		  ("h" "Home Lists" ((tags-todo "HOME")))
+		  ("d" "Daily Action List"
+		   ((agenda "" ((org-agenda-ndays 1)
+						(org-agenda-sorting-strategy
+						 (quote ((agenda time-up priority-down tag-up) )))
+						(org-deadline-warning-days 0)
+						))))))
+)
 
 (add-hook 'org-mode-hook 'org-mode-keys)

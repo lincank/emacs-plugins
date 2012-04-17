@@ -6,7 +6,7 @@
 (global-set-key (kbd "C-x <left>") 'tabbar-backward)
 (global-set-key (kbd "C-x <right>") 'tabbar-forward)
 (global-set-key [f6] 'goto-line)
-(global-set-key [f11] 'execute-extended-command)
+(global-set-key [f8] 'execute-extended-command)
 
 (setq mac-option-key-is-meta t)
 (setq mac-command-key-is-meta nil)
