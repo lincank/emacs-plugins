@@ -1,7 +1,3 @@
-(if (string= "cpp"
-			 (file-name-extension (buffer-name)))
-	(load-file "~/.emacs.d/emacs-plugins/init/c-settings.el"))
-
 ;; 缩进风格
 (setq indent-tabs-mode nil)
 (setq default-tab-width 4)
