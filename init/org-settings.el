@@ -8,8 +8,8 @@
 
 (setq org-agenda-files (list "~/repo/bitbucket/crackcell-agenda/gtd.org"
 							 "~/repo/bitbucket/crackcell-agenda/inbox.org"
-							 "~/repo/bitbucket/crackcell-agenda/notes.org"
-							 "~/repo/bitbucket/crackcell-agenda/periodical.org"))
+							 "~/repo/bitbucket/crackcell-agenda/periodical.org"
+							 "~/repo/bitbucket/crackcell-agenda/notes.org"))
 (setq org-footnote-auto-adjust t)
 
 (setq org-refile-targets
