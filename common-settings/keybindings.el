@@ -1,5 +1,5 @@
 ;; 设置自定义键绑定
-(global-set-key (kbd "C-k") 'kill-whole-line)
+;;(global-set-key (kbd "C-k") 'kill-whole-line)
 (global-set-key [f2] 'replace-string)
 (global-set-key [f3] 'tabbar-backward)
 (global-set-key [f4] 'tabbar-forward)
