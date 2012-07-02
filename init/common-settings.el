@@ -71,6 +71,9 @@
 ;; zencoding
 (load-file "~/.emacs.d/emacs-plugins/init/zencoding-settings.el")
 
+;; magit
+(load-file "~/.emacs.d/emacs-plugins/init/magit.el")
+
 ;; org
 ;;(load-file "~/.emacs.d/emacs-plugins/init/org-settings.el")
 
