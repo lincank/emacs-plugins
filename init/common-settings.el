@@ -7,7 +7,7 @@
 ;;html-mode tabs
 (add-hook 'html-mode-hook
           (lambda()
-            (setq sgml-basic-offset 4)
+            (setq sgml-basic-offset 2)
             (setq indent-tabs-mode t)))
 
 ;; Display line and column numbers
@@ -61,6 +61,8 @@
 ;;	  browse-url-generic-program "chrome"
 ;;	  browse-url-browser-function gnus-button-url)
 
+;; init exec path
+(load-file "~/.emacs.d/emacs-plugins/init/init-exec-path.el")
 
 ;;markdown mode
 (load-file "~/.emacs.d/emacs-plugins/init/markdown-settings.el")
@@ -74,8 +76,10 @@
 ;; magit
 (load-file "~/.emacs.d/emacs-plugins/init/magit.el")
 
+(require 'init-exec-path)
+
 ;; org
-;;(load-file "~/.emacs.d/emacs-plugins/init/org-settings.el")
+(load-file "~/.emacs.d/emacs-plugins/init/org-settings.el")
 
 ;; muse
 ;;(load-file "~/.emacs.d/emacs-plugins/init/muse-settings.el")
